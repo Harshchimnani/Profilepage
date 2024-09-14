@@ -1,0 +1,285 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    background-image: url();
+    background-repeat: no-repeat;
+    color: #b1c21cbd;
+    line-height: 1.6;
+    padding: 20px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('bodyback1.png'); /* Replace with actual image URL */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* This makes the background stay in place while scrolling */
+    /* color: #333; */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.profile-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Profile Container */
+.profile-container {
+    max-width: 100%;
+    margin: 0 auto;
+    /* background-color: #b1c21cbd; */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Profile Header */
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #007bff;
+    margin-bottom: 15px;
+}
+
+
+h1 {
+    font-size: 26px;
+    color: #b1c21cbd;
+}
+
+/* Profile Sections */
+.profile-section {
+    margin-top: 30px;
+}
+
+.profile-section h2 {
+    font-size: 22px;
+    /* color: #333; */
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: rgba(197, 49, 49, 0.719);
+
+    font-family: 'Lobster', cursive;
+}
+
+/* Profile Details */
+.info {
+    margin-bottom: 20px;
+}
+
+.info label {
+    display: block;
+    font-size: 14px;
+    color: #606;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    font-size: 16px;
+    color:darkorange;
+    margin: 0;
+}
+
+.edit-field {
+    display: none;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+textarea.edit-field {
+    height: 80px;
+    resize: none;
+}
+
+/* Social Media Section */
+.social-media {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.social-link {
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-link i {
+    font-size: 22px;
+}
+
+.social-link:hover {
+    color: #0056b3;
+}
+
+/* Gallery Styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Projects Section */
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-link {
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    color: #0056b3;
+}
+
+/* Edit Button */
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 15px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .profile-section h2 {
+        font-size: 20px;
+    }
+
+    .info-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social-media {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .gallery img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-container {
+        padding: 10px;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .profile-section h2 {
+        font-size: 18px;
+    }
+
+    .social-media {
+        gap: 8px;
+    }
+
+    .gallery img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .project h3 {
+        font-size: 18px;
+    }
+
+    .project p {
+        font-size: 14px;
+    }
+}

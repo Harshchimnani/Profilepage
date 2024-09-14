@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="task2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="task2prof.jpg" alt="Profile Picture" id="profile-img" class="profile-img">
+            <input type="file" id="profile-img-input" class="edit-field" onchange="loadProfileImage(event)" style="display: none;">
+            <h1 id="name-display">Harsh Chimnani</h1>
+        </div>
+
+        <div class="profile-section">
+            <h2>About Me</h2>
+            <div class="info">
+                <label>Bio</label>
+                <div class="info-content">
+                    <p id="bio-display">Hi, I'm Harsh Chimnani, an aspiring web developer currently interning at Orinson Technologies Private Limited. Since August 2024, I've been diving into web development, with my first major project being a restaurant landing page created using HTML, CSS, and JavaScript. I’m passionate about crafting engaging and functional web experiences, and I love to immerse myself in coding challenges and new technologies. I’m eager to continue learning and gaining new experiences to grow as a developer and contribute to innovative digital solutions.</p>
+                    <textarea id="bio-input" class="edit-field">Hi, I'm Harsh Chimnani, an aspiring web developer currently interning at Orinson Technologies Private Limited. Since August 2024, I've been diving into web development, with my first major project being a restaurant landing page created using HTML, CSS, and JavaScript. I’m passionate about crafting engaging and functional web experiences, and I love to immerse myself in coding challenges and new technologies. I’m eager to continue learning and gaining new experiences to grow as a developer and contribute to innovative digital solutions.</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-section">
+            <h2>Contact Information</h2>
+            <div class="info">
+                <label>Email</label>
+                <div class="info-content">
+                    <p id="email-display">chimnaniharsh4@gmail.com</p>
+                    <input type="email" id="email-input" value="chimnaniharsh4@gmail.com" class="edit-field">
+                </div>
+            </div>
+            <div class="info">
+                <label>Phone</label>
+                <div class="info-content">
+                    <p id="phone-display"></p>
+                    <input type="tel" id="phone-input" value="8791996677" class="edit-field">
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-section">
+            <h2>Skills</h2>
+            <div class="info">
+                <label>Skills</label>
+                <div class="info-content">
+                    <p id="skills-display">HTML, CSS, JavaScript, C Programming, Python, Better Communication Skills</p>
+                    <textarea id="skills-input" class="edit-field">HTML, CSS, JavaScript, C Programming, Python, Better Communication Skills</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-section">
+            <h2>Hobbies</h2>
+            <div class="info">
+                <label>Hobbies</label>
+                <div class="info-content">
+                    <p id="hobbies-display">Music, Watching Interesting Movies, Coding, Tech Geek</p>
+                    <textarea id="hobbies-input" class="edit-field">Music, Watching Interesting Movies, Coding, Tech Geek</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-section">
+            <h2>Interests</h2>
+            <div class="info">
+                <label>Interests</label>
+                <div class="info-content">
+                    <p id="interests-display">Technology, Music, Coding</p>
+                    <textarea id="interests-input" class="edit-field">Technology, Music, Coding</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-section">
+            <h2>Projects</h2>
+            <div class="info">
+                <div class="project">
+                    <h3>Project 1: Amazon clone</h3>
+                    <p>This is a clone website showcasing my skills, projects, and contact details. Built with HTML, CSS, and JavaScript.</p>
+                    <a href="#" target="_blank" class="project-link">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Project 2: Restaurant landing page </h3>
+                    <p>A simple todo list application built with React and Node.js for managing tasks efficiently.</p>
+                    <a href="#" target="_blank" class="project-link">View Project</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-section">
+            <h2>Social Media Links</h2>
+            <div class="info">
+                <div class="social-media">
+                    <a href="https://github.com/harshchimnani" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/harsh-chimnani-7944b1277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://www.instagram.com/p/C7yCRHKvgqw/?igsh=NjZiM2M3MzIxNA==" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-section">
+            <h2>Profile Image</h2>
+            <div class="info">
+                <label>Upload Profile Image</label>
+                <input type="file" id="profile-img-input" class="edit-field" onchange="loadProfileImage(event)">
+            </div>
+        </div>
+
+        <div class="profile-section">
+            <h2>Gallery</h2>
+            <div class="info">
+                <label>Upload Images</label>
+                <input type="file" id="gallery-img-input" class="edit-field" multiple onchange="loadGalleryImages(event)">
+            </div>
+            <div class="gallery" id="gallery">
+                <!-- Images will appear here -->
+            </div>
+        </div>
+
+        <button id="edit-btn" onclick="toggleEdit()">Edit Profile</button>
+    </div>
+
+    <script src="task2.js"></script>
+</body>
+</html>
